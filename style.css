@@ -1,24 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+*,body,html{
+    font-family: DM Sans, sans-serif;
+    word-spacing: -5%;
+    letter-spacing: -5%;
+}
+
 
 body{
+    letter-spacing: -5%;
+    word-spacing: -5%;
     font-family: DM Sans, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
-    margin: 70px 80px;
     background-color: #0F0F0F;
 }
 
 .header{
+    margin: 20px 80px;
+    overflow: auto;
+    max-height: 100px;
     display: flex;
     align-items: center;
-    
-}
-
-.logo{
-    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0F0F0F;
 }
 
 .nav{
@@ -60,10 +68,19 @@ li a:hover{
 }
 
 .hero{
-    margin-top: 100px;
+    margin: 0 80px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+
+    /* background addition */
+
+    background-image: url('./assets/Hero-bg.png');
+    background-size: cover;
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 .heroText{
@@ -87,6 +104,7 @@ li a:hover{
 .heroText span{
     color: #fff;
     font-size: 24px;
+    margin-top: -16px;
 }
 
 .heroButtons{
@@ -97,14 +115,21 @@ li a:hover{
 }
 
 .appleButton , .googleButton{
+    margin-top: 32px;
     border: none;
     cursor: pointer;
     color: #fff;
     width: 236px;
     height: 63px;
     font-size: 24px;
-    border-radius: 50px;    
+    border-radius: 50px; 
+    font-weight: bold;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
+
 
 .appleButton.googleButton img{
     width: 24px;
@@ -119,4 +144,148 @@ li a:hover{
 .googleButton{
     background: #D9D9D9;
     color: #1c1c1c;
+}
+
+.heroImgContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    flex-shrink: 1;
+}
+
+.heroImg{
+    width: 1085px;
+    height: 304px;
+    flex-shrink: 1;
+}
+
+.features{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    flex-flow: column wrap;
+    margin: 0 80px;
+}
+
+.featuresText{
+    color: #fff;
+}
+
+.featuresText h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.featuresText span{
+    font-size: 24px;
+}
+
+.featuresContainer{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 80px;
+    text-align: left;
+    margin-bottom: 80px;
+}
+
+.singleFeature{
+    display: flex;
+    flex-direction: column;
+}
+
+.singleFeature img{
+    width: 100px;
+    height: 100px;
+    gap: 75px;
+}
+
+.singleFeature h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.singleFeature span{
+    font-size: 18px;
+    width: 70%;
+    text-align:left;
+}
+
+.download{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.downloadContainer{
+    margin-top: 80px;
+    background-image: url('./assets/downloadBg.png');
+    background-size: cover;
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 1280px;
+    height: 632px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    flex-shrink: 1;
+}
+
+.downloadText{
+    color: #fff;
+    text-align: center;
+}
+
+.downloadText h1{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.download span{
+    font-size: 24px;
+}
+
+.download  .heroButtons button{
+    cursor: pointer;
+    color: #fff;
+    background: rgba(82, 95, 233, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 236px;
+    height: 63px;
+    font-size: 24px;
+    border-radius: 50px;
+}
+
+.footer{
+    background-color: #000;
+    height: 120px;
+    width: 100%;
+    border-radius: 16px 16px 0 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.footerContainer{
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.footerContainer img{
+    width: fit-content;
+    height: fit-content;
+}
+
+.footerContainer span{
+    font-size: 24px;
 }
