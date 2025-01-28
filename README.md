@@ -8,7 +8,7 @@ Feel free to see the Figma prototype [HERE](https://www.figma.com/proto/LmtC82Ju
 - Cool design since I'm the best UI Designer ever lived and will ever live.
 - Full dark mode design.
 - Kinda responsive design (I'm still a noob at CSS).
-- Sticky header (I'don't know I'm out of features).
+- Sticky header (I don't know I'm out of features).
 
 **feel free to take the whole project and edit it, burn it down, call it names or anything it's up to you bro.**
 
