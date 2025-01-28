@@ -2,14 +2,10 @@
 
 *,body,html{
     font-family: DM Sans, sans-serif;
-    word-spacing: -5%;
-    letter-spacing: -5%;
 }
 
 
 body{
-    letter-spacing: -5%;
-    word-spacing: -5%;
     font-family: DM Sans, sans-serif;
     margin: 0;
     padding: 0;
